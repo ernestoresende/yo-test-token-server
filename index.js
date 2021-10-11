@@ -16,7 +16,7 @@ app.get("/", function (request, response) {
 });
 
 const server = http.createServer(app);
-const port = process.env.port || 4000;
+const port = process.env.PORT;
 server.listen(port, function () {
   console.log("Express server running on *:" + port);
 });
