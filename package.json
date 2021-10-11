@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": "Ernesto Resende <dev@ernestoresende.com>",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node ."
+  },
   "devDependencies": {
     "jsonwebtoken": "^8.5.1"
   },
