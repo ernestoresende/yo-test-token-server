@@ -3,7 +3,7 @@ require("dotenv").config();
 const AccessToken = require("twilio").jwt.AccessToken;
 const VideoGrant = AccessToken.VideoGrant;
 
-function tokenGenerator(identity, room) {
+function videoTokenGenerator(identity, room) {
   const twilioAccountSid = process.env.TWILIO_ACCOUNT_SID;
   const twilioApiKey = process.env.TWILIO_API_KEY;
   const twilioApiSecret = process.env.TWILIO_API_SECRET;
@@ -23,4 +23,4 @@ function tokenGenerator(identity, room) {
   return token.toJwt();
 }
 
-module.exports = tokenGenerator;
+module.exports = videoTokenGenerator;
